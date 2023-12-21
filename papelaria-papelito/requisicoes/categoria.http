@@ -1,0 +1,25 @@
+GET HTTP://localhost:8080/api/categorias/4
+
+### 
+
+POST HTTP://localhost:8080/api/categorias
+Content-Type: application/json
+
+{
+    "nome": "Caneta ",
+    "descricao": "caneta comum"
+}
+
+###
+
+PUT HTTP://localhost:8080/api/categorias/6
+Content-Type: application/json
+
+{
+    "nome": "Caneta Esferográfica",
+    "descricao": "caneta comum"
+}
+
+###
+
+DELETE HTTP://localhost:8080/api/categorias/3

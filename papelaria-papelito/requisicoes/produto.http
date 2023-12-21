@@ -1,0 +1,39 @@
+GET HTTP://localhost:8080/api/produtos/5
+
+
+###
+
+GET HTTP://localhost:8080/api/produtos
+
+###
+
+POST HTTP://localhost:8080/api/produtos
+Content-Type: application/json
+
+{
+    "descricao": "Caneta vermelha",
+    "estoque": 500,
+    "observacao": "ponta fina",
+    "tipoEmbalagem": "UNIDADE",
+    "valor": 3.9,
+    "categoria": {
+        "id": 6
+    }
+}
+
+### 
+
+PUT HTTP://localhost:8080/api/produtos/1
+Content-Type: application/json
+
+{
+    "descricao": "Lapis de cor Faber Castell",
+    "estoque": 100,
+    "observacao": "25 cores",
+    "tipoEmbalagem": "CAIXA",
+    "valor": 46.5
+}
+
+###
+
+DELETE HTTP://localhost:8080/api/produtos/3

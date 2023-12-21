@@ -1,0 +1,39 @@
+GET HTTP://localhost:8080/api/enderecos
+
+###
+
+POST HTTP://localhost:8080/api/enderecos
+Content-Type: application/json
+
+{
+    "bairro": "centro",
+    "cep": "27865-032",
+    "cidade": "Paraiba do Sul",
+    "complemento": "",
+    "estado": "RJ",
+    "numero": 89,
+    "rua": "Nelson Vianna",
+    "cliente": {
+        "id": 2
+    }
+}
+
+###
+
+PUT HTTP://localhost:8080/api/enderecos/1
+Content-Type: application/json
+
+{
+    "bairro": "centro",
+    "cep": "25804-040",
+    "cidade": "Três Rios",
+    "id_cliente": "1",
+    "complemento": "",
+    "estado": "RJ",
+    "numero": 36,
+    "rua": "Carlos Ribas"
+}
+
+###
+
+DELETE HTTP://localhost:8080/api/enderecos/4

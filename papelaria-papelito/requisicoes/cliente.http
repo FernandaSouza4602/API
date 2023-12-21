@@ -1,0 +1,28 @@
+GET HTTP://localhost:8080/api/clientes/2
+
+###
+
+POST HTTP://localhost:8080/api/clientes
+Content-Type: application/json
+
+{
+    
+    "email": "mariclaranevada@gmail.com",
+    "idade": 25,
+    "nome": "Maria Clara Neves Pinheiro"
+}
+
+###
+
+PUT HTTP://localhost:8080/api/clientes/2
+Content-Type: application/json
+
+{
+    "email": "mariaclaranevada@gmail.com",
+    "idade": 25,
+    "nome": "Maria Clara Neves Pinheiro"
+}
+
+###
+
+DELETE HTTP://localhost:8080/api/clientes/1
